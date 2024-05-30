@@ -1,21 +1,22 @@
-So sánh Performance(Load) Testing & API Testing 2 trang web (weatherapi.com & openweathermap.com)
+# So sánh Performance(Load) Testing & API Testing 2 trang web (weatherapi.com & openweathermap.com)
 
-Với: 
-Số lượng chủ đề – Đây là số lượng người dùng ảo mà chúng tôi dự kiến ​​​​sẽ kết nối với máy chủ: 1000
-Giai đoạn tăng tốc – Đây có thể được định nghĩa là thời gian mà JMeter có thể đưa số lượng luồng được đề cập ở trên vào trạng thái chạy: 100
-số vòng lặp: 2
+**Với: **
+- Số lượng chủ đề – Đây là số lượng người dùng ảo mà chúng tôi dự kiến ​​​​sẽ kết nối với máy chủ: 1000
+- Giai đoạn tăng tốc – Đây có thể được định nghĩa là thời gian mà JMeter có thể đưa số lượng luồng được đề cập ở trên vào trạng thái chạy: 100
+- Số vòng lặp: 2
 
-Kết quả của trang openweathermap.com
+## Kết quả của trang openweathermap.com
 ![Screenshot_13](https://github.com/thtrungg/PostmanTest/assets/99778704/5eb1e0a2-2923-4e88-835c-23b0ab505e1d)
 ![Screenshot_16](https://github.com/thtrungg/PostmanTest/assets/99778704/fca03440-a93e-44c5-a47f-5927dd9bee7c)
 
-Kết quả của trang weatherapi.com
+## Kết quả của trang weatherapi.com
 ![Screenshot_8](https://github.com/thtrungg/PostmanTest/assets/99778704/3a6c41fb-18bc-43f5-9c94-dab52120cf59)
 ![Screenshot_15](https://github.com/thtrungg/PostmanTest/assets/99778704/c9ff55be-9e99-42aa-b20d-4fcd51c28f52)
 
+## Kết quả phân tính thông số 2 trang web
 ![Screenshot_17](https://github.com/thtrungg/PostmanTest/assets/99778704/5d2b7dd1-3736-4b90-bf0d-1a0819d07f15)
 
-Phân tích:
+## Phân tích:
 Tổng số kết nối: Giảm từ 120 xuống 82 kết nối, điều này có thể do cải thiện hiệu quả trong việc tái sử dụng các kết nối hiện có.
 
 Số lượng yêu cầu bị lỗi: Giảm từ 62 xuống 40, cho thấy hiệu suất và độ tin cậy của hệ thống đã được cải thiện.
@@ -32,5 +33,5 @@ Thời gian trung bình để nhận phản hồi đầy đủ: Tăng từ 3.54 
 
 Tổng thời gian tiêu tốn: Tăng từ 1447.05 ms lên 4729.0 ms, cho thấy tổng thời gian xử lý tất cả các yêu cầu đã tăng lên đáng kể.
 
-Kết luận:
+## Kết luận:
 Mặc dù có sự cải thiện về số lượng lỗi và số lượng kết nối, nhưng thời gian xử lý trung bình cho mỗi yêu cầu và tổng thời gian xử lý đã tăng lên đáng kể. Điều này có thể cho thấy hệ thống đang xử lý các yêu cầu phức tạp hơn hoặc có sự thay đổi trong cách các yêu cầu được xử lý, dẫn đến tăng thời gian xử lý. Việc tăng lượng dữ liệu truyền tải cũng có thể là một yếu tố góp phần
